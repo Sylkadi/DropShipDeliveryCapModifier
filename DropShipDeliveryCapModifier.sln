@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropShipDeliveryCapModifier", "DropShipDeliveryCapModifier\DropShipDeliveryCapModifier.csproj", "{AAFC357A-55C5-4180-A09C-5E6571692BE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAFC357A-55C5-4180-A09C-5E6571692BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFC357A-55C5-4180-A09C-5E6571692BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFC357A-55C5-4180-A09C-5E6571692BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFC357A-55C5-4180-A09C-5E6571692BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F38713F0-F987-49C3-AB42-5C0D2F5BF1BB}
+	EndGlobalSection
+EndGlobal
