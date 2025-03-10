@@ -1,0 +1,10 @@
+{
+  "name": "DropShipDeliveryCapModifier",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/Sylkadi/DropShipDeliveryCapModifier",
+  "description": "Increases Drop ship capacity from 12 to 999 and purchase amount.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100"
+  ]
+}
+  
