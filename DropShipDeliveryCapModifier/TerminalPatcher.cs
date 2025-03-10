@@ -20,7 +20,6 @@ namespace DropShipDeliveryCapModifier
         [HarmonyPatch("LoadNewNodeIfAffordable")]
         public static IEnumerable<CodeInstruction> OnLoadNewNodeIfAffordableIL(IEnumerable<CodeInstruction> instructions)
         {
-            Log.Info("Modifying Terminal.LoadNewNodeIfAffordable");
             var code = new List<CodeInstruction>(instructions);
 
             int index = 0;
@@ -105,7 +104,6 @@ namespace DropShipDeliveryCapModifier
         [HarmonyPatch("ParsePlayerSentence")]
         public static IEnumerable<CodeInstruction> OnParsePlayerSentenceIL(IEnumerable<CodeInstruction> instructions)
         {
-            Log.Info("Modifying Terminal.ParsePlayerSentence");
             var code = new List<CodeInstruction>(instructions);
 
             for (int i = 4; i < code.Count; i++)
