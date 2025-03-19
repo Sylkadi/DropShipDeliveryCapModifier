@@ -30,8 +30,8 @@ namespace DropShipDeliveryCapModifier
                    code[i].opcode == OpCodes.Ldc_I4_S && code[i].operand.ToString() == "12")
                 {
                     index = i;
-                    code.RemoveAt(i);
-                    code.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, Plugin.config.deliveryCap.Value));
+                    code[i].opcode = OpCodes.Ldc_I4;
+                    code[i].operand = Plugin.config.deliveryCap.Value;
                     break;
                 }
             }
@@ -44,8 +44,7 @@ namespace DropShipDeliveryCapModifier
                     code[i - 1].opcode == OpCodes.Add &&
                     code[i].opcode == OpCodes.Ldc_R4 && code[i].operand.ToString() == "12")
                 {
-                    code.RemoveAt(i);
-                    code.Insert(i, new CodeInstruction(OpCodes.Ldc_R4, (float)Plugin.config.deliveryCap.Value));
+                    code[i].operand = (float)Plugin.config.deliveryCap.Value;
                     break;
                 }
             }
@@ -67,8 +66,8 @@ namespace DropShipDeliveryCapModifier
                     code[i - 1].opcode == OpCodes.Conv_I4 &&
                     code[i].opcode == OpCodes.Ldc_I4_S && code[i].operand.ToString() == "12")
                 {
-                    code.RemoveAt(i);
-                    code.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, Plugin.config.deliveryCap.Value));
+                    code[i].opcode = OpCodes.Ldc_I4;
+                    code[i].operand = Plugin.config.deliveryCap.Value;
                     break;
                 }
             }
@@ -90,8 +89,8 @@ namespace DropShipDeliveryCapModifier
                     code[i - 1].opcode == OpCodes.Conv_I4 && 
                     code[i].opcode == OpCodes.Ldc_I4_S && code[i].operand.ToString() == "12")
                 {
-                    code.RemoveAt(i);
-                    code.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, Plugin.config.deliveryCap.Value));
+                    code[i].opcode = OpCodes.Ldc_I4;
+                    code[i].operand = Plugin.config.deliveryCap.Value;
                     break;
                 }
             }
@@ -114,8 +113,8 @@ namespace DropShipDeliveryCapModifier
                     code[i - 1].opcode == OpCodes.Ldc_I4_0 &&
                     code[i].opcode == OpCodes.Ldc_I4_S && code[i].operand.ToString() == "10")
                 {
-                    code.RemoveAt(i);
-                    code.Insert(i, new CodeInstruction(OpCodes.Ldc_I4, Plugin.config.buyCap.Value));
+                    code[i].opcode = OpCodes.Ldc_I4;
+                    code[i].operand = Plugin.config.buyCap.Value;
                     break;
                 }
             }

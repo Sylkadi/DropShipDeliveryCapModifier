@@ -9,7 +9,7 @@ namespace DropShipDeliveryCapModifier
     {
         private const string GUID = "com.github.Sylkadi.DropShipDeliveryCapModifier";
         private const string NAME = "DropShipDeliveryCapModifier";
-        private const string VERSION = "1.0.1";
+        private const string VERSION = "1.0.2";
         public static readonly Harmony harmony = new Harmony(GUID);
 
         public static Configuration config { get; private set; }
